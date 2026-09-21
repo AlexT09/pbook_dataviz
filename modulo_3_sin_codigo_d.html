@@ -61,7 +61,7 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_3_sin_codigo';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'modulo_3_sin_codigo_d';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -261,7 +261,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmodulo_3_sin_codigo.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fmodulo_3_sin_codigo_d.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -291,7 +291,7 @@
       
       
       
-      <li><a href="_sources/modulo_3_sin_codigo.ipynb" target="_blank"
+      <li><a href="_sources/modulo_3_sin_codigo_d.ipynb" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -385,26 +385,33 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Módulo 3: Visualización de datos interactivos</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-faltantes-y-atipicos"><strong>Tratamiento de datos faltantes y atípicos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-faltantes"><strong>Eliminación de datos faltantes</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes"><strong>Imputación de datos faltantes</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-categoricos"><strong>Datos categóricos</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-numericos"><strong>Datos numéricos</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-atipicos"><strong>Tratamiento de datos atípicos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr"><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento"><strong>Tratamiento</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-atipicos"><strong>Eliminación de datos atípicos</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea">Tarea</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes"><strong>Imputación de datos faltantes</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-categoricos"><strong>Datos categóricos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-numericos"><strong>Datos numéricos</strong></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Tarea</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-atipicos"><strong>Tratamiento de datos atípicos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr"><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento"><strong>Tratamiento</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-atipicos"><strong>Eliminación de datos atípicos</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva"><strong>Visualización interactiva</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aspecto-claves-de-las-visualizaciones-interactivas"><strong>Aspecto claves de las visualizaciones interactivas</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-nuestro-dataset"><strong>Preparación de nuestro dataset</strong></a></li>
@@ -428,6 +435,9 @@ document.write(`
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -448,7 +458,7 @@ document.write(`
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
 
 <span class="c1"># Cargar el archivo CSV proporcionado</span>
-<span class="n">file_path</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">file_path</span> <span class="o">=</span> <span class="s1">&#39;_data/dataviz/ds_salaries.csv&#39;</span>
 <span class="n">df</span> <span class="o">=</span>  <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">file_path</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -457,7 +467,26 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Informacion del dataset</span>
-<span class="c1"># TU CODIGO AQUI</span>
+<span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          595 non-null    float64
+ 1   Designation           600 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            597 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
 </pre></div>
 </div>
 </div>
@@ -468,10 +497,10 @@ document.write(`
 <span class="n">df_va</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># Revisar los datos faltantes en el conjunto de datos</span>
-<span class="n">missing_values</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">missing_values</span> <span class="o">=</span> <span class="n">df_va</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
 <span class="c1"># Calcular el porcentaje de valores faltantes</span>
-<span class="n">missing_percentage</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">missing_values</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_va</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
 
 <span class="c1"># Crear un DataFrame con el análisis de datos faltantes</span>
 <span class="n">missing_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -483,16 +512,83 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Valores Faltantes</th>
+      <th>Porcentaje Faltante (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Working_Year</th>
+      <td>12</td>
+      <td>1.976936</td>
+    </tr>
+    <tr>
+      <th>Designation</th>
+      <td>7</td>
+      <td>1.153213</td>
+    </tr>
+    <tr>
+      <th>Experience</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Employment_Status</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Employee_Location</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Company_Size</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Remote_Working_Ratio</th>
+      <td>0</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Salary_USD</th>
+      <td>10</td>
+      <td>1.647446</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <section id="eliminacion-de-datos-faltantes">
 <h3><strong>Eliminación de datos faltantes</strong><a class="headerlink" href="#eliminacion-de-datos-faltantes" title="Link to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Coloquemos un umbral</span>
-<span class="n">umbral</span> <span class="o">=</span>  <span class="c1"># TU CODIGO</span>
+<span class="n">umbral</span> <span class="o">=</span>  <span class="nb">len</span><span class="p">(</span><span class="n">df_va</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.05</span>  <span class="c1"># Por ejemplo, 5% del total de filas</span>
 
 <span class="c1"># Selecciona columnas con valores faltantes &lt;= umbral</span>
-<span class="n">cols_to_drop</span> <span class="o">=</span> <span class="n">df_va</span> <span class="o">.</span><span class="n">columns</span><span class="p">[</span> <span class="c1"># TU CODIGO]</span>
+<span class="n">cols_to_drop</span> <span class="o">=</span> <span class="n">df_va</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="n">missing_values</span> <span class="o">&lt;=</span> <span class="n">umbral</span><span class="p">]</span>
 
 <span class="c1"># Elimina filas con valores faltantes en las columnas seleccionadas</span>
 <span class="n">df_va</span><span class="o">.</span><span class="n">dropna</span><span class="p">(</span><span class="n">subset</span><span class="o">=</span><span class="n">cols_to_drop</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -502,8 +598,53 @@ document.write(`
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          595 non-null    float64
+ 1   Designation           600 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            597 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># informacion del dataset ajustado</span>
- <span class="c1"># TU CODIGO</span>
+<span class="n">df_va</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 578 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          578 non-null    float64
+ 1   Designation           578 non-null    object 
+ 2   Experience            578 non-null    object 
+ 3   Employment_Status     578 non-null    object 
+ 4   Employee_Location     578 non-null    object 
+ 5   Company_Size          578 non-null    object 
+ 6   Remote_Working_Ratio  578 non-null    int64  
+ 7   Salary_USD            578 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 40.6+ KB
 </pre></div>
 </div>
 </div>
@@ -511,10 +652,10 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Revisar los datos faltantes en el conjunto de datos</span>
-<span class="n">missing_values</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">missing_values</span> <span class="o">=</span> <span class="n">df_va</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
 <span class="c1"># Calcular el porcentaje de valores faltantes</span>
-<span class="n">missing_percentage</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">missing_values</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_va</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
 
 <span class="c1"># Crear un DataFrame con el análisis de datos faltantes</span>
 <span class="n">missing_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
@@ -526,6 +667,73 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Valores Faltantes</th>
+      <th>Porcentaje Faltante (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Working_Year</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Designation</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Experience</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employment_Status</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employee_Location</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Company_Size</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Remote_Working_Ratio</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Salary_USD</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
 </div>
 <p>Otra forma para eliminar los datos faltantes es:</p>
 <div class="cell docutils container">
@@ -534,7 +742,33 @@ document.write(`
 <span class="n">df_2</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># eliminar las filas con Nans</span>
-<span class="n">df_clean</span> <span class="o">=</span>  <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">df_clean</span> <span class="o">=</span>  <span class="n">df_2</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_clean</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+Index: 578 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          578 non-null    float64
+ 1   Designation           578 non-null    object 
+ 2   Experience            578 non-null    object 
+ 3   Employment_Status     578 non-null    object 
+ 4   Employee_Location     578 non-null    object 
+ 5   Company_Size          578 non-null    object 
+ 6   Remote_Working_Ratio  578 non-null    int64  
+ 7   Salary_USD            578 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 40.6+ KB
 </pre></div>
 </div>
 </div>
@@ -542,11 +776,11 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Revisar los datos faltantes en el conjunto de datos</span>
-<span class="n">missing_values</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">missing_values</span> <span class="o">=</span> <span class="n">df_clean</span><span class="o">.</span><span class="n">isnull</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
 <span class="c1"># Calcular el porcentaje de valores faltantes</span>
 
-<span class="n">missing_percentage</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">missing_percentage</span> <span class="o">=</span> <span class="p">(</span><span class="n">missing_values</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">df_clean</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
 <span class="c1"># Crear un DataFrame con el análisis de datos faltantes</span>
 <span class="n">missing_data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span>
     <span class="s1">&#39;Valores Faltantes&#39;</span><span class="p">:</span> <span class="n">missing_values</span><span class="p">,</span>
@@ -554,6 +788,99 @@ document.write(`
 <span class="p">})</span>
 
 <span class="n">missing_data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Valores Faltantes</th>
+      <th>Porcentaje Faltante (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Working_Year</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Designation</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Experience</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employment_Status</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Employee_Location</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Company_Size</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Remote_Working_Ratio</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <th>Salary_USD</th>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          595 non-null    float64
+ 1   Designation           600 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            597 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
 </pre></div>
 </div>
 </div>
@@ -564,8 +891,8 @@ document.write(`
 <span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
 
 <span class="c1"># Contar frecuencias en cada DataFrame</span>
-<span class="n">original_counts</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
-<span class="n">clean_counts</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">original_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;Experience&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
+<span class="n">clean_counts</span> <span class="o">=</span> <span class="n">df_clean</span><span class="p">[</span><span class="s1">&#39;Experience&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 
 <span class="c1"># Unir ambos conteos en un solo DataFrame</span>
 <span class="n">comparison</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">(</span>
@@ -587,13 +914,16 @@ document.write(`
 </pre></div>
 </div>
 </div>
+<div class="cell_output docutils container">
+<img alt="_images/96d5934ab55ff271abd272bdabc2f5205796e40e1eb0132c4dfe4bb9e98eea55.png" src="_images/96d5934ab55ff271abd272bdabc2f5205796e40e1eb0132c4dfe4bb9e98eea55.png" />
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.stats</span> <span class="kn">import</span> <span class="n">chi2_contingency</span>
 
 <span class="c1"># Alinear categorías para evitar errores</span>
-<span class="n">comparison_table</span> <span class="o">=</span> <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">comparison_table</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">original_counts</span><span class="p">,</span> <span class="n">clean_counts</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Original&#39;</span><span class="p">,</span> <span class="s1">&#39;Limpio&#39;</span><span class="p">])</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># Prueba chi-cuadrado</span>
 <span class="n">chi2</span><span class="p">,</span> <span class="n">p</span><span class="p">,</span> <span class="n">dof</span><span class="p">,</span> <span class="n">expected</span> <span class="o">=</span> <span class="n">chi2_contingency</span><span class="p">(</span><span class="n">comparison_table</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
@@ -603,6 +933,14 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Estadístico chi²:&quot;</span><span class="p">,</span> <span class="n">chi2</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Grados de libertad:&quot;</span><span class="p">,</span> <span class="n">dof</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Valor p:&quot;</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Prueba Chi-cuadrado de homogeneidad
+Estadístico chi²: 0.07153479107112373
+Grados de libertad: 3
+Valor p: 0.9950192620159025
 </pre></div>
 </div>
 </div>
@@ -619,8 +957,8 @@ document.write(`
 
 <span class="c1"># Crear gráfico de densidad</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="c1"># TU CODIGO AQUI, label=&#39;Original&#39;, linewidth=2)</span>
-<span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="c1"># TU CODIGO AQUI, label=&#39;Limpio&#39;, linewidth=2, linestyle=&#39;--&#39;)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Remote_Working_Ratio&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Original&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">sns</span><span class="o">.</span><span class="n">kdeplot</span><span class="p">(</span><span class="n">df_clean</span><span class="p">[</span><span class="s1">&#39;Remote_Working_Ratio&#39;</span><span class="p">],</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Limpio&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">)</span>
 
 <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Distribución de &#39;Remote_Working_Ratio&#39; antes y después de eliminar NaN&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s2">&quot;Remote Working Ratio&quot;</span><span class="p">)</span>
@@ -630,6 +968,9 @@ document.write(`
 <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
 </pre></div>
 </div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/d94cd0699ec8e1554a2fb75acf4f65b9e49c8107d0f99f21351dfcdce2f24fc9.png" src="_images/d94cd0699ec8e1554a2fb75acf4f65b9e49c8107d0f99f21351dfcdce2f24fc9.png" />
 </div>
 </div>
 <div class="cell docutils container">
@@ -659,13 +1000,69 @@ Valor p: 1.0
 </div>
 </div>
 </section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="tarea">
+<h1>Tarea<a class="headerlink" href="#tarea" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          595 non-null    float64
+ 1   Designation           600 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            597 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
+</pre></div>
+</div>
+</div>
+</div>
 <section id="imputacion-de-datos-faltantes">
-<h3><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Link to this heading">#</a></h3>
+<h2><strong>Imputación de datos faltantes</strong><a class="headerlink" href="#imputacion-de-datos-faltantes" title="Link to this heading">#</a></h2>
 <section id="datos-categoricos">
-<h4><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Link to this heading">#</a></h4>
+<h3><strong>Datos categóricos</strong><a class="headerlink" href="#datos-categoricos" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Usando la <strong>moda</strong>:</p></li>
 </ol>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          595 non-null    float64
+ 1   Designation           600 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            597 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
+</pre></div>
+</div>
+</div>
+</div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Copia del dataset</span>
@@ -676,7 +1073,7 @@ Valor p: 1.0
     <span class="c1"># Comprobar si la columna es de tipo objeto (categórica)</span>
     <span class="k">if</span>  <span class="n">df_3</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">dtypes</span><span class="o">==</span><span class="s1">&#39;object&#39;</span><span class="p">:</span>
         <span class="c1"># Imputar los valores faltantes con la moda (categoría más frecuente)</span>
-        <span class="c1"># TU CODIGO AQUI</span>
+        <span class="n">df_3</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df_3</span><span class="p">[</span><span class="n">col</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -703,7 +1100,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="datos-numericos">
-<h4><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Link to this heading">#</a></h4>
+<h3><strong>Datos numéricos</strong><a class="headerlink" href="#datos-numericos" title="Link to this heading">#</a></h3>
 <ol class="arabic simple">
 <li><p>Usando <strong>la media o el promedio</strong></p></li>
 </ol>
@@ -713,7 +1110,7 @@ Valor p: 1.0
 <span class="n">df_6</span> <span class="o">=</span> <span class="n">df_4</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># Imputar los valores perdidos con imputación de medias</span>
-<span class="c1"># TU CODIGO AQUI</span>
+<span class="n">df_6</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df_6</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">mean</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -727,7 +1124,33 @@ Valor p: 1.0
 <span class="n">df_7</span> <span class="o">=</span> <span class="n">df_4</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># Imputar los valores perdidos con imputación de medias</span>
-<span class="c1"># TU CODIGO AQUI</span>
+<span class="n">df_7</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="n">df_7</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">number</span><span class="p">])</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_7</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          607 non-null    float64
+ 1   Designation           607 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            607 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
 </pre></div>
 </div>
 </div>
@@ -739,10 +1162,10 @@ Valor p: 1.0
 <span class="kn">from</span> <span class="nn">sklearn.impute</span> <span class="kn">import</span> <span class="n">SimpleImputer</span>
 
 <span class="c1"># Copia del dataset</span>
-<span class="n">df_8</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
+<span class="n">df_8</span> <span class="o">=</span> <span class="n">df_4</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
 
 <span class="c1"># Crear la instancia para imputar con la media</span>
-<span class="n">imputer</span> <span class="o">=</span>  <span class="c1"># TU CODIGO AQUI</span>
+<span class="n">imputer</span> <span class="o">=</span> <span class="n">SimpleImputer</span><span class="p">(</span><span class="n">strategy</span><span class="o">=</span><span class="s1">&#39;mean&#39;</span><span class="p">)</span>
 
 <span class="c1"># Imputar los valores faltantes</span>
 <span class="n">df_8</span><span class="p">[[</span><span class="s1">&#39;Working_Year&#39;</span><span class="p">,</span><span class="s1">&#39;Salary_USD&#39;</span><span class="p">]]</span> <span class="o">=</span> <span class="n">imputer</span><span class="o">.</span><span class="n">fit_transform</span><span class="p">(</span><span class="n">df_8</span><span class="p">[[</span><span class="s1">&#39;Working_Year&#39;</span><span class="p">,</span><span class="s1">&#39;Salary_USD&#39;</span><span class="p">]])</span>
@@ -750,10 +1173,65 @@ Valor p: 1.0
 </div>
 </div>
 </div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df_8</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          607 non-null    float64
+ 1   Designation           607 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            607 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
+</pre></div>
+</div>
+</div>
+</div>
 </section>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Tarea<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 607 entries, 0 to 606
+Data columns (total 8 columns):
+ #   Column                Non-Null Count  Dtype  
+---  ------                --------------  -----  
+ 0   Working_Year          595 non-null    float64
+ 1   Designation           600 non-null    object 
+ 2   Experience            607 non-null    object 
+ 3   Employment_Status     607 non-null    object 
+ 4   Employee_Location     607 non-null    object 
+ 5   Company_Size          607 non-null    object 
+ 6   Remote_Working_Ratio  607 non-null    int64  
+ 7   Salary_USD            597 non-null    float64
+dtypes: float64(2), int64(1), object(5)
+memory usage: 38.1+ KB
+</pre></div>
+</div>
+</div>
+</div>
 <section id="tratamiento-de-datos-atipicos">
-<h3><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Link to this heading">#</a></h3>
+<h2><strong>Tratamiento de datos atípicos</strong><a class="headerlink" href="#tratamiento-de-datos-atipicos" title="Link to this heading">#</a></h2>
 <p>Vamos a crear un gráfico de caja para comprobar si nuestro conjunto de datos contiene valores atípicos. Vamos a utilizar el conjunto de datos <code class="docutils literal notranslate"><span class="pre">gym.csv</span></code>, que contiene información sobre los clientes de un determinado gimnasio.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -800,7 +1278,7 @@ Valor p: 1.0
 </div>
 </div>
 <section id="deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr">
-<h4><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Link to this heading">#</a></h4>
+<h3><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong><a class="headerlink" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr" title="Link to this heading">#</a></h3>
 <p>Valores fuera de 1.5 veces el rango intercuartil son atípicos.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -835,9 +1313,9 @@ Valor p: 1.0
 </div>
 </section>
 <section id="tratamiento">
-<h4><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Link to this heading">#</a></h4>
+<h3><strong>Tratamiento</strong><a class="headerlink" href="#tratamiento" title="Link to this heading">#</a></h3>
 <section id="eliminacion-de-datos-atipicos">
-<h5><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Link to this heading">#</a></h5>
+<h4><strong>Eliminación de datos atípicos</strong><a class="headerlink" href="#eliminacion-de-datos-atipicos" title="Link to this heading">#</a></h4>
 <p>Eliminaremos el dato que contiene el valor atípico del conjunto de datos utilizado previamente y, a continuación, visualizaremos el nuevo conjunto de datos mediante un gráfico de caja actualizado.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -887,7 +1365,7 @@ Valor p: 1.0
 </section>
 </section>
 <section id="aplicacion-de-iterativeimputer">
-<h3><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Link to this heading">#</a></h3>
+<h2><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong><a class="headerlink" href="#aplicacion-de-iterativeimputer" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -971,7 +1449,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="iterativeimputer-y-evaluacion-de-modelos">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Link to this heading">#</a></h3>
+<h2><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong><a class="headerlink" href="#iterativeimputer-y-evaluacion-de-modelos" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -1008,7 +1486,7 @@ Valor p: 1.0
 </div>
 </section>
 <section id="iterativeimputer-y-diferentes-ordenes-de-imputacion">
-<h3><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Link to this heading">#</a></h3>
+<h2><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong><a class="headerlink" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion" title="Link to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">numpy</span> <span class="kn">import</span> <span class="n">mean</span>
@@ -1085,7 +1563,6 @@ Valor p: 1.0
 </div>
 </div>
 </div>
-</section>
 </section>
 <section id="visualizacion-interactiva">
 <h2><strong>Visualización interactiva</strong><a class="headerlink" href="#visualizacion-interactiva" title="Link to this heading">#</a></h2>
@@ -2426,26 +2903,33 @@ function(Bokeh) {
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#"><strong>Módulo 3: Visualización de datos interactivos</strong></a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-faltantes-y-atipicos"><strong>Tratamiento de datos faltantes y atípicos</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-faltantes"><strong>Eliminación de datos faltantes</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes"><strong>Imputación de datos faltantes</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-categoricos"><strong>Datos categóricos</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-numericos"><strong>Datos numéricos</strong></a></li>
-</ul>
-</li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-atipicos"><strong>Tratamiento de datos atípicos</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr"><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong></a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento"><strong>Tratamiento</strong></a><ul class="nav section-nav flex-column">
-<li class="toc-h5 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-atipicos"><strong>Eliminación de datos atípicos</strong></a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong></a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#tarea">Tarea</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imputacion-de-datos-faltantes"><strong>Imputación de datos faltantes</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-categoricos"><strong>Datos categóricos</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#datos-numericos"><strong>Datos numéricos</strong></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Tarea</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento-de-datos-atipicos"><strong>Tratamiento de datos atípicos</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deteccion-de-valores-atipicos-mediante-el-rango-intercuantil-iqr"><strong>Detección de valores atípicos mediante el rango intercuantil (IQR)</strong></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tratamiento"><strong>Tratamiento</strong></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminacion-de-datos-atipicos"><strong>Eliminación de datos atípicos</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplicacion-de-iterativeimputer"><strong>Aplicación de <code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code></strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-evaluacion-de-modelos"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y evaluación de modelos</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#iterativeimputer-y-diferentes-ordenes-de-imputacion"><strong><code class="docutils literal notranslate"><span class="pre">IterativeImputer</span></code> y diferentes órdenes de imputación</strong></a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#visualizacion-interactiva"><strong>Visualización interactiva</strong></a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#aspecto-claves-de-las-visualizaciones-interactivas"><strong>Aspecto claves de las visualizaciones interactivas</strong></a></li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preparacion-de-nuestro-dataset"><strong>Preparación de nuestro dataset</strong></a></li>
@@ -2469,6 +2953,9 @@ function(Bokeh) {
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
